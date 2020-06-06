@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    font-weight: lighter;
+}
+
+html, body, main {
+    min-height: 100vh;
+
+}
+
+main {
+    background: url(../img/paris.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+main #content {
+    position: fixed;
+    padding: 10px;
+    border-radius: 15px;
+    top: 10vh;
+    right: 10vh;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    width: 50vw;
+    max-height: 80vh;
+    backdrop-filter: blur(5px);
+    overflow-x:hidden;
+    overflow-y:scroll;
+    -ms-overflow-style:none;
+}
+
+
+
+
+
+
+
+main #content:hover {
+    padding-right: 4px;
+}
+    
+main #content:hover::-webkit-scrollbar{
+    display: inherit;
+}
+main #content::-webkit-scrollbar{
+    background-color: rgba(0,0,0,0);
+    width: 6px;
+    display: none;
+}
+
+main #content::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+}
+
+main #content::-webkit-scrollbar-thumb{
+    background-color: #CCC;
+    border-radius: 4px;
+}
+
+
+main #content #prevision-hour tbody:hover td{
+    padding-right: 4px;
+}
+
+main #content #prevision-hour tbody:hover::-webkit-scrollbar{
+    display: inherit;
+}
+
+main #content #prevision-hour tbody::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0);
+}
+
+main #content #prevision-hour tbody::-webkit-scrollbar{
+    background-color: rgba(0,0,0,0);
+    width: 6px;
+    display: none;
+}
+
+main #content #prevision-hour tbody::-webkit-scrollbar-thumb{
+    background-color: #CCC;
+    border-radius: 4px;
+}
+
+main #content table {
+    width: 100%;
+    font-size:1.4rem;
+    border-collapse: collapse;
+}
+
+main #content table caption {
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 4px 0;
+    font-weight: normal;
+
+}
+
+main #content table td {
+    padding: 10px 0px;
+    border-top: 1px solid rgb(250, 248, 234);
+}
+main #content #prevision-hour {
+    display: block;
+}
+
+
+main #content #prevision-hour tbody {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+main #content table:last-child tr td:nth-child(1) {
+    width: 15%;
+}
+
+main #content table:last-child tr td:nth-child(3),
+main #content table:last-child tr td:nth-child(4) {
+    width: 5%;
+}
+
+main #weather {
+    margin-bottom: 10px;
+}
+main #weather .current {
+    font-size: 72px; 
+    font-size: 7.2rem; 
+    line-height: 6rem;
+}
+
+main #weather .maximal,
+main #weather .minimal {
+    font-size: 2rem;
+}
+
+main #weather .ciel {
+    font-size: 3rem;
+}
+
+@media (max-width: 767.98px) {
+    main #content {
+        top: 3vh;
+        bottom: 3vh;
+        left: 3vh;
+        right: 3vh;
+        transform: none;
+        width: auto;
+        max-height: none;
+    }
+}
+
+.hourly-tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.border-top-none {
+    border-top: none!important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(250, 248, 234);
+}
+
+#day {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dayTable {
+    width: 20%!important;
+}

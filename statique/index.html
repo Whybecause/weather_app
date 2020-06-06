@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Florent@ief2i.fr -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Exo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type=text/css href="css/app.css">
+
+  <script type="text/javascript" src="js/app.js" defer></script>
+</head>
+
+<body>
+  <theader></theader>
+  <main>
+    <section id="content">
+      <div id="weather">
+        <div id="current">
+          <div>
+            <span class="ciel"></span>
+          </div>
+          <div>
+            <span>max</span><span class="maximal"></span><span>min</span><span class="minimal"></span>
+          </div>
+          <div>
+            <span class="current"></span>
+          </div>
+        </div>
+      </div>
+      <table id="prevision-hour">
+        <caption>
+          Prévisions Horaires
+        </caption>
+        <tbody>
+          <tr>
+            <td id="hours" class="hourly-tables"></td>
+            <td id="icons-hours" class="hourly-tables border-top-none"></td>
+            <td id="temps-hours" class="hourly-tables border-top-none border-bottom"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="prevision-day">
+        <caption>
+          Prévision Journalière
+        </caption>
+        <tbody id="day">
+
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>
